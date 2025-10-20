@@ -6,7 +6,7 @@
 
 Aplikasi Web Manajemen Tugas Mahasiswa yang modern dan responsif untuk mengelola semua tugas akademik dengan fitur lengkap dan penyimpanan lokal menggunakan localStorage.
 
-![Aplikasi Manajemen Tugas](https://via.placeholder.com/800x400/3B82F6/FFFFFF?text=Manajemen+Tugas+Mahasiswa)
+![Aplikasi Manajemen Tugas](https://github.com/MIFTAAHULKHR/pemrograman_web_itera_123140064/tree/main/Miftahul%20Khoiriyah_123140064_Pertemuan1)
 
 ### ✨ Fitur Utama:
 
@@ -72,6 +72,7 @@ project-folder/
 ├── styles.css          # Custom styles dan animasi
 └── script.js           # Logika aplikasi dan functionality
 ```
+
 
 
 
