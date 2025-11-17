@@ -15,12 +15,13 @@ Proyek ini dibuat sebagai latihan React modern dengan state global via **Context
 ### Beranda
 Filter, kolom pencarian, dan daftar koleksi dalam satu tempat.
 
-<img width="1905" height="916" alt="beranda.png" />
+![Beranda](documentation/beranda.png)
 
 ### Modal Tambah / Edit
 Form dengan validasi untuk memastikan input penting terisi.
 
-<img width="1270" height="725" alt="TambahBuku.png" />
+![Tambah Buku](documentation/TambahBuku.png)
+
 
 ---
 
