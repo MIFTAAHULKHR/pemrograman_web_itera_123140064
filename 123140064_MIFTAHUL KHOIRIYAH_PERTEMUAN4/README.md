@@ -44,7 +44,7 @@ Program ini adalah sistem manajemen data nilai mahasiswa yang dibuat dengan Pyth
 
 ## 🖼️ Screenshot Program
 
-![Tampilan Program](D:\TUGAS KULIAH\Semester 5\PRAKTIKUM PENGWEB\123140064_MIFTAHUL KHOIRIYAH_PERTEMUAN4/Tampilan.png)
+![Tampilan Program](Tampilan.png)
 
 *Gambar 1: Tampilan menu utama dan fitur-fitur program*
 
@@ -149,4 +149,5 @@ Menghitung rata-rata nilai akhir seluruh kelas
 - [ ] Autentikasi pengguna
 
 ---
+
 **Dibuat untuk keperluan akademik dan pembelajaran pemrograman Python**
