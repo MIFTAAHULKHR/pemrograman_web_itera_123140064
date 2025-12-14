@@ -1,5 +1,0 @@
-[console_scripts]
-init_db = app.scripts:init_db
-
-[paste.app_factory]
-main = app:main

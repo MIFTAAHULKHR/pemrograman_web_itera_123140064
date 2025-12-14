@@ -1,6 +1,0 @@
-pyramid
-waitress
-alembic
-sqlalchemy
-psycopg2-binary
-zope.sqlalchemy
