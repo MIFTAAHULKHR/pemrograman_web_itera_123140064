@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-7xl">
+        <header class="mb-6">
+            <h1 class="text-3xl font-bold text-white">Personal Dashboard</h1>
+            <p class="text-gray-400" id="welcome-message">Selamat datang kembali!</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="md:col-span-1 lg:col-span-1 space-y-6">
+                <div class="bg-gray-800 p-5 rounded-xl shadow-lg h-40 flex flex-col justify-center items-center">
+                    <div id="time-display" class="text-5xl font-bold text-white"></div>
+                    <div id="date-display" class="text-lg text-gray-400"></div>
+                </div>
+
+                <div class="bg-gray-800 p-5 rounded-xl shadow-lg h-48">
+                    <h2 class="text-xl font-semibold mb-3">Cuaca Saat Ini</h2>
+                    <div id="weather-display" class="flex items-center justify-center h-full">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-1 lg:col-span-1 space-y-6">
+                <div class="bg-gray-800 p-5 rounded-xl shadow-lg h-96 flex flex-col">
+                    <div class="flex justify-between items-center mb-3">
+                        <h2 class="text-xl font-semibold">Jadwal Kuliah</h2>
+                        <button id="add-schedule" class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors">
+                            <i data-feather="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <div id="schedule-list" class="overflow-y-auto flex-grow space-y-3 pr-2"></div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-1 space-y-6">
+                <div class="bg-gray-800 p-5 rounded-xl shadow-lg h-96 flex flex-col">
+                    <div class="flex justify-between items-center mb-3">
+                        <h2 class="text-xl font-semibold">Daftar Tugas</h2>
+                        <button id="add-todo" class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors">
+                            <i data-feather="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                    <div id="todo-list" class="overflow-y-auto flex-grow space-y-3 pr-2"></div>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 p-5 rounded-xl shadow-lg md:col-span-2 lg:col-span-3">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-xl font-semibold">Catatan</h2>
+                    <button id="add-note" class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors">
+                        <i data-feather="plus" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                <div id="note-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 overflow-y-auto max-h-96 pr-2"></div>
+            </div>
+        </main>
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 hidden">
+        <div id="modal-content" class="bg-gray-800 p-6 rounded-xl shadow-2xl w-full max-w-md transform">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modal-title" class="text-2xl font-semibold"></h3>
+                <button id="close-modal" class="text-gray-400 hover:text-white">
+                    <i data-feather="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <form id="modal-form">
+                <input type="hidden" id="modal-edit-id">
+                <input type="hidden" id="modal-type">
+                <div id="form-content" class="space-y-4"></div>
+                <div class="mt-6 flex justify-end space-x-3">
+                    <button type="button" id="modal-delete" class="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-colors hidden">Hapus</button>
+                    <button type="submit" id="modal-save" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

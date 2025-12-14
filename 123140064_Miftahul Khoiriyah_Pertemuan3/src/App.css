@@ -1,0 +1,60 @@
+/* ===== Root container ===== */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-6);
+  text-align: center;
+}
+
+/* ===== Logo ===== */
+.logo {
+  height: 6em;
+  padding: var(--space-4);
+  will-change: filter, transform;
+  transition: filter var(--dur-2) var(--ease-out), transform var(--dur-2) var(--ease-out);
+}
+.logo:hover {
+  filter: drop-shadow(0 8px 24px rgba(109, 40, 217, 0.4)); /* violet glow */
+  transform: translateY(-2px) scale(1.02);
+}
+.logo.react:hover { filter: drop-shadow(0 8px 24px rgba(236, 72, 153, 0.35)); } /* magenta glow */
+
+/* Spin hanya bila user tidak mengaktifkan reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo { animation: logo-spin infinite 18s linear; }
+}
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ===== Card util ===== */
+.card {
+  padding: var(--space-5);
+  background: var(--putih);
+  border: 1px solid var(--abu-batas);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+  transition: transform var(--dur-2) var(--ease-out), box-shadow var(--dur-2) var(--ease-out);
+}
+.card:hover {
+  transform: perspective(1000px) translateY(-4px) rotateX(-1deg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===== Helper ===== */
+.read-the-docs { color: var(--teks-placeholder); }
+
+/* ===== Dark mode ===== */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: var(--panel);
+    border-color: var(--border);
+    box-shadow: var(--shadow-dm);
+  }
+  .read-the-docs { color: var(--muted); }
+}
+/* Light mode: tebalin judul section */
+.page-header h1 { letter-spacing: -0.4px; }
+
