@@ -124,15 +124,15 @@ pserve development.ini --reload
 ## 🖼️ Screenshot Aplikasi
 
 ### **1. Status Server**
-![Home Page](screenshot/localhost.png)
+![Home Page](secrenshoot/localhost.png)
 *Halaman utama API - menampilkan status aplikasi*
 
 ### **2. Pengujian Read, Create, dan Update**
-![Database Schema](screenshot/pengujian1.png)
+![Database Schema](secrenshoot/pengujian1.png)
 *Gabungan GET All, GET by ID, POST, dan PUT*
 
 ### **3. Pengujian Error Handling dan Delete**
-![API Testing](screenshot/pengujian.png)
+![API Testing](secrenshoot/pengujian.png)
 *engujian ini menunjukkan keberhasilan Update data matakuliah ID 1, penanganan error saat POST kode duplikat (MK001), dan keberhasilan menghapus data ID 3.*
 
 ## 🌐 API Endpoints
@@ -448,3 +448,4 @@ Untuk pertanyaan atau masalah, silakan buat issue di repository atau hubungi pen
 
 ---
 **🔥 API siap digunakan!** Akses `http://localhost:6543/` untuk memulai.
+
